@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>External_URL__c</fullName>
+    <externalId>false</externalId>
+    <label>External URL</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>https://dev1.externalurl.com</fullName>
+                <default>false</default>
+                <label>https://dev1.externalurl.com</label>
+            </value>
+            <value>
+                <fullName>https://static.externalurl.com</fullName>
+                <default>false</default>
+                <label>https://static.externalurl.com</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
