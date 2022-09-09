@@ -10,9 +10,12 @@ public class testDemoObjectController {
         obj.Description__c = 'Some dummy description';
         String output = DemoObjectController.getExternalURL(obj);
         System.assertEquals(output,'https://{!Environment.EXTERNAL_URL}');
-        // Need to add code to test the getDescription method
-        // 
-        // // made a change in DEV1
+
+        String newDescription = 'A new description';
+        obj = DemoObjectController.setDescription(obj,newDescription);
+        String d = DemoObjectController.getDescription(obj);
+        System.assertEquals(d,'Some dummy description');
+        
     
     }
 
