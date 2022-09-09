@@ -7,5 +7,13 @@ public class DemoObjectController {
         return url;
     
     }
+    
+    static public String getDescription(Demo_Object__c obj) {
+    
+        String d = obj.Description__c;
+        
+        return d;
+    
+    }
 
 }
