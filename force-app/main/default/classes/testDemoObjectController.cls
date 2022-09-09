@@ -1,7 +1,5 @@
 @isTest
 public class testDemoObjectController {
-    // made a change in DEV2
-
     @isTest
     public static void testGetURL() {
     
@@ -10,9 +8,8 @@ public class testDemoObjectController {
         obj.Description__c = 'Some dummy description';
         String output = DemoObjectController.getExternalURL(obj);
         System.assertEquals(output,'https://{!Environment.EXTERNAL_URL}');
-        // Need to add code to test the getDescription method
-        // 
-        // // made a change in DEV1
+        output = DemoObjectController.getDescription(obj);
+        System.assertEquals(output,'Some wrong description');
     
     }
 
